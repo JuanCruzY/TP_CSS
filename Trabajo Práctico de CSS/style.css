@@ -1,0 +1,156 @@
+/*Este archivo con formato CSS se utiliza para darle estilos a los elementos de HTML.*/
+body{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+}
+#texto{/*Usamos el numeral cuando a una etiqueta la identificamos con un id.*/
+    color: blueviolet; /*Le otorgamos color al texto del identificador.*/
+}
+.p1texto{
+    color: rgb(190, 150, 17);
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    text-decoration: underline;
+    letter-spacing: 0.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+}
+blockquote{
+    background-color: rgb(225, 225, 225);
+}
+section{
+    border: 1px solid blue;
+    margin: 1px;
+    padding: 5%;
+    background-color: beige;
+}
+.box1{
+    background-color: blanchedalmond;
+    width: 70vw;
+    height: 30vh;
+    border: 2px double black;
+    margin: 15px;
+    padding: 5%;
+    border-radius: 0.5rem;
+
+}
+.box2{
+    background-color: orange;
+    border: 2px dotted black;
+    box-shadow: 5px 4px 10px 2px black;
+    border-radius: 0%;
+}
+.relativo{
+    width: 15vw;
+    height: 15vh;
+    background-color: rgb(227, 255, 127);
+    margin: 5%;
+    position: relative;
+    top: 20px;
+    left: 50%;
+}
+.absoluto{
+    width: 5vw;
+    height: 5vh;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.queriessection{
+    position: relative;
+    height: 300px;
+}
+.queriesbox1{
+    width: 20vw;
+    height: 20vh;
+    background-color: blueviolet;
+    position: absolute;
+}
+@media  screen and (min-width: 768px){
+    .queriesbox1{
+        bottom: 0;
+        right: 0;
+    }
+    body{
+        background-color: brown;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+.container{
+    background-color: orange;
+    border: 1px solid black;
+    padding: 0.4rem;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 2vh;
+}
+.element{
+    border: 1px solid black;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;   
+    width: 80vw;
+    height: 100vh;
+    border: 1px solid black;
+}
+.grid-container div{
+    background-color: olive;
+    border: 1px solid black;
+    height: 150px;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.animacion{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 0.8s ease-in-out;
+}
+.animacion:hover{
+    cursor: pointer;
+    background-color: blue;
+}
+.mover{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: green;
+    animation: mov 5s infinite;
+}
+@keyframes mov{
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(100px, 0px);
+
+    }
+    50%{
+        transform: translate(100px, -100px);
+
+
+    }
+    75%{
+        transform: translate(100px, 0px);
+
+    }
+    100%{
+        transform: translateX(0px, 0px);
+
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico de SCC</title>
+    <link rel="stylesheet" href="./style.css"/><!--Usamos esta etiqueta para linkear nuestro archivo CSS.-->
+</head>
+<body>
+    <header>
+        <h1>Aprendiendo CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h2 id="estructura">4.1 Estructura de un archivo CSS</h2>
+            <div>
+                <p>La estructura de un archivo CSS es la siguiente:</p>
+                <p>
+                    identificador {<br/>
+                        propiedad: valor;<br/>
+                    }
+                </p>
+                <p>
+                    CSS utiliza un estilo de cascada, esto quiere decir que si yo a un 
+                    identificador le asigno un estilo, y luego unas lineas de código 
+                    más abajo le asigno otro estilo, el estilo que prevalecerá es el
+                    último colocado.
+                </p>
+                <p>
+                    En esta sección no se colocarán estilos para que gráficamente
+                    se pueda apreciar cómo pasamos de un archivo HTML sin estilo a 
+                    uno con estilo.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2 id="texto">4.2 Propiedades de Texto en CSS</h2><!-- Usamos el id para que luego le asignemos estilo únicamente a este h2 y no a todos los h2 del documento. --> 
+            <div>
+                <p class="p1texto"><!-- El class tiene el mismo uso que el id -->
+                    En CSS usamos la propiedad color para darle color al texto, 
+                    font-size para darle tamaño a la letra, font-family para indicar 
+                    la fuente, text-align para la ubicación del texto, text-decoration
+                     para subrayar, tachar, etc, letter-spacing para el espaciado 
+                     entre letra y letra, y line-height para el espaciado entre líneas.
+                </p>
+            </div>
+            <div>
+                <blockquote>
+                    Eso de comiditas fuera, y abracitos, y besitos, eso para mi no cuenta para nada. Lo que importante dentro del campo hacer que el equipo gane.<br/>
+                <cite>- Cristiano Ronaldo.</cite>
+                </blockquote>
+            </div>
+        </section>
+        <section>
+            <h2>4.3 Propiedades de Caja en CSS</h2>
+            <div class="box1">
+                <p>
+                    En CSS a las cajas les podemos aplicar propiedades como background-color, width, height, border, margin, padding, box-shadow, border-radius, entre otros.
+                </p>
+            </div>
+            <div class="box1 box2">
+                <p>
+                    Aplicamos las mismas propiedades que en la caja 1 pero con algunos valores distintos.
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>4.4 Posición Relativa en CSS Y Posición Absoluta en CSS</h2>
+            <div class="relativo">
+                <div class="absoluto"> 
+
+                </div>
+            </div>
+            <div>
+                <p>Lo que hice fue ubicar el div absoluto en la esquina inferior derecha del div relativo.</p>
+            </div>
+        </section>
+        <section class="queriessection">
+            <h2>4.5 Media Queries en CSS</h2>
+            <div class="queriesbox1">
+
+            </div>
+        </section>
+        <section>
+            <h2>4.6 Principios de Flex Box </h2>
+            <div class="container">
+                <div class="element">
+                    <h3>Elemento 1</h3>
+                </div>
+                <div class="element">
+                    <h3>Elemento 2</h3>
+                </div>
+                <div class="element">
+                    <h3>Elemento 3</h3>
+                </div>
+                <div class="element">
+                    <h3>Elemento 4</h3>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>4.7 Principios de Grid en CSS</h2>
+            <div class="grid-container">
+                <div>Elemento 1</div>
+                <div>Elemento 2</div>
+                <div>Elemento 3</div>
+                <div>Elemento 4</div>
+            </div>
+        </section>
+        <section>
+            <h2>4.8 Principios de Animaciones en CSS</h2>
+            <div class="animacion">
+
+            </div>
+            <div class="mover">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Juan Cruz Yanardi. Todos los derechos reservados.</p>
+        <p>Dirección: Calle Belgrano 230, Ciudad de Mendoza, Mendoza, Argentina</p>
+        <p>Teléfono: (+54) 261 517-4751 | Email: yanardiferrerjuancruz31@gmail.com</p>
+    </footer>
+</body>
+</html>
